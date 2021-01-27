@@ -1,0 +1,5 @@
+/node_modules
+/images
+mongodb.js
+playground.js
+/src/db
