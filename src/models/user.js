@@ -70,6 +70,8 @@ userSchema.virtual("tasks", {
   foreignField: "owner",
 });
 
+
+//Remove some fields that we don't want to display them in response.
 userSchema.methods.toJSON = function () {
   const user = this;
 
@@ -78,6 +80,8 @@ userSchema.methods.toJSON = function () {
   delete userObject.password;
 
   delete userObject.tokens;
+
+  delete userObject.avatar;
 
   return userObject;
 };
