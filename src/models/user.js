@@ -112,7 +112,6 @@ userSchema.statics.findByCredentials = async (email, password) => {
 };
 
 //Delete user task when user is removed
-
 userSchema.pre("remove", async function (next) {
   const user = this;
   await Task.deleteMany({ owner: user._id });
