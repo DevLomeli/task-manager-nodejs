@@ -2,3 +2,5 @@
 mongodb.js
 playground.js
 /config
+/__tests__/math.test.js
+/src/math.js
